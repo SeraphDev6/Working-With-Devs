@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="reveal/dist/reset.css" />
+    <link rel="stylesheet" href="reveal/dist/reveal.css" />
+    <link rel="stylesheet" href="reveal/dist/theme/league.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="reveal/plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="reveal/custom/styles.css" />
+
+    <script src="reveal/custom/script.js" defer></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="intro">
+          <h2>Working with Developers</h2>
+          <h5>Bringing your technology to life!</h5>
+          <img
+            src="reveal/custom/img/intro_pic.png"
+            alt="A developer and businessman working together"
+            class="introImg"
+            onclick="turnOnFragments()"
+          />
+          <a href="https://SeraphDev.com/Working-With-Devs" target="_blank">
+            <p>SeraphDev.com/Working-With-Devs</p>
+          </a>
+        </section>
+        <section id="whoAmI">
+          <h3>Who Am I</h3>
+          <div class="row">
+            <img
+              src="reveal/custom/img/logo.png"
+              alt="SeraphDev Logo"
+              id="logo"
+            />
+            <ul>
+              <li class="fragment spaced">
+                Professional Software Developer Specialized in Full Stack
+                Applications
+              </li>
+              <li class="fragment spaced">
+                Educator with experience teaching technology
+              </li>
+              <li class="fragment spaced">
+                Consultant focused on helping businesses find and solve the root
+                of their problems
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="why">
+          <section id="workWithADev">
+            <h2>Why work with a developer?</h2>
+            <ul>
+              <li class="fragment spaced">Create a new, custom product</li>
+              <li class="fragment spaced">
+                Have more control over the technology
+              </li>
+              <li class="fragment spaced">
+                Delegate tasks to someone specialized
+              </li>
+            </ul>
+          </section>
+          <section id="followMyAdvice">
+            <h2>Some things to consider</h2>
+            <ul>
+              <li class="fragment spaced">Development is costly</li>
+              <li class="fragment spaced">
+                Developers may have different ideas on how a project should work
+              </li>
+              <li class="fragment spaced">
+                Custom development can take some time
+              </li>
+              <li class="fragment spaced">The product may have bugs</li>
+            </ul>
+          </section>
+        </section>
+        <section id="WhatYouCanDo">
+          <h3>How Should You Work With A Dev</h3>
+          <ol>
+            <li class="fragment spaced">
+              <a href="#KnowWhatYouWant">Know What You Want</a>
+            </li>
+            <li class="fragment spaced">
+              <a href="#Communicate">Communicate With Precision</a>
+            </li>
+            <li class="fragment spaced">
+              <a href="#Onions">Start Small, Build an Onion</a>
+            </li>
+            <li class="fragment spaced">
+              <a href="#Testing">Talk About Testing</a>
+            </li>
+            <li class="fragment spaced">
+              <a href="#TheRightDev	">Find The Right Dev</a>
+            </li>
+          </ol>
+        </section>
+        <section id="KnowWhatYouWant">
+          <section>
+            <h3>Working with a Dev should not be</h3>
+            <img
+              src="reveal/custom/img/the-notebook-ryan-gosling.gif"
+              alt="What Do You Want Gif"
+              class="fragment"
+            />
+            <p class="fragment">
+              Having clearly defined requirements is essential to get your
+              product built
+            </p>
+          </section>
+          <section>
+            <h3>The Discovery Phase</h3>
+            <p class="fragment">
+              At the beginning of a project, most developers will go through a
+              "Discovery" phase. This is where they will try to figure out what
+              the project is and what it should do.
+            </p>
+            <p class="fragment">
+              This usually involves writing out a scope of the project, with all
+              the requirements, time frame, and expected cost.
+            </p>
+          </section>
+          <section>
+            <h3>Cost of Indecision</h3>
+            <div class="row top">
+              <ul class="fifty">
+                <p>Having Requirements</p>
+                <li class="fragment spaced" data-fragment-index="1">
+                  Shorter discovery phase saves you time
+                </li>
+                <li class="fragment spaced" data-fragment-index="3">
+                  Developer has a clear goal to work towards
+                </li>
+                <li class="fragment spaced" data-fragment-index="5">
+                  Less pivots and changes saves time and money
+                </li>
+              </ul>
+              <ul class="fifty">
+                <p>No Requirements</p>
+                <li class="fragment spaced" data-fragment-index="2">
+                  Project is held up in discovery
+                </li>
+                <li class="fragment spaced" data-fragment-index="4">
+                  Developer may be unsure of goals
+                </li>
+                <li class="fragment spaced" data-fragment-index="6">
+                  More likely to need to make changes to project
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="Communicate">
+          <section>
+            <h3>Communicate Clearly</h3>
+            <img
+              src="reveal/custom/img/communication.png"
+              alt="Meme of requirements"
+              class="comms"
+            />
+            <p>Developers can't read your mind</p>
+          </section>
+          <section>
+            <h3>Introducing User Stories</h3>
+            <p class="fragment">
+              Now that you know what you want, you have to be able to
+              communicate that clearly to the dev you are working with
+            </p>
+            <p class="fragment">
+              A common method of this is by writing User Stories
+            </p>
+            <p class="fragment">These look like:</p>
+            <code class="fragment"
+              >Users will be able to do <i>something</i></code
+            >
+          </section>
+          <section>
+            <h3>Compare the Following</h3>
+            <ul>
+              <li class="fragment">
+                I want to build a social media site where users can create
+                posts, comments, and like post or comments
+              </li>
+            </ul>
+            <h4 class="fragment">OR</h4>
+            <ul class="fragment">
+              <li>Users will be able to create an account</li>
+              <li>Users will be able to log in to an account</li>
+              <li>
+                When a User is creates an account they will be automatically
+                logged in
+              </li>
+              <li>A logged in User can create a Post</li>
+              <li>A logged in User can create a Comment on a Post</li>
+              <li>A logged in User can Like a Comment or a Post one time</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Which one was more clear?</h3>
+            <p class="fragment">
+              User Stories may seem like more work, but they provide a multitude
+              o benefits for you and your developer, such as:
+            </p>
+            <ul>
+              <li class="fragment spaced">
+                Less ambiguity and less assumptions made
+              </li>
+              <li class="fragment spaced">
+                A clear roadmap and way to view progress
+              </li>
+              <li class="fragment spaced">
+                An easier method of changing requirements
+              </li>
+              <li class="fragment spaced">A base to build tests off of</li>
+            </ul>
+          </section>
+        </section>
+        <section id="Onions">
+          <section>
+            <h3>Build an Onion</h3>
+            <img
+              src="reveal/custom/img/onions.gif"
+              alt="Onions have layers"
+              class="fragment onions"
+            />
+            <p class="fragment">
+              Your app should be built like an onion:
+              <br />
+              It should have layers
+            </p>
+          </section>
+          <section>
+            <h3>What does that mean?</h3>
+            <div class="row">
+              <img
+                src="reveal/custom/img/OnionLayers.png"
+                alt="Onion Architecture Diagram"
+                class="onionLayers"
+              />
+              <p class="fragment">
+                Onion Architecture is a pattern in which the Domain acts as the
+                core of the application, with layers above it to handle the
+                various other functions of the app
+              </p>
+            </div>
+          </section>
+          <section>
+            <h3>Benefits of Onion Architecture</h3>
+            <ul>
+              <li class="fragment spaced">
+                Changes to outer layers becomes easier
+              </li>
+              <li class="fragment spaced">
+                Code is more stable and easier to build onto
+              </li>
+              <li class="fragment spaced">
+                Code isn't repeated and development is faster
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>How You help build the onion</h3>
+            <ul>
+              <li class="fragment spaced">
+                Understand your domains completely and avoid changes to them
+              </li>
+              <li class="fragment spaced">
+                Write User Stories with the domain at the center first
+              </li>
+              <li class="fragment spaced">
+                Talk to your developer about the domains your project will be
+                using
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section id="Testing">
+          <section>
+            <h3>Talk About Testing</h3>
+            <img
+              src="reveal/custom/img/itsWorking.gif"
+              alt="Anakin It's Working Gif"
+              class="fragment"
+            />
+            <p class="fragment">But how to we make sure it stays working?</p>
+          </section>
+          <section>
+            <h3>Testing your App</h3>
+            <p class="fragment">
+              By asking your developer to write automated tests for the
+              application, you can avoid problems such as:
+            </p>
+            <ul>
+              <li class="fragment">Changes breaking other parts of the app</li>
+              <li class="fragment">Bugs existing in the code</li>
+              <li class="fragment">Code being difficult to maintain</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Testing tradeoffs</h3>
+            <p class="fragment">
+              Writing Unit and Integration tests does take time and effort from
+              the developer, and can increase initial costs of a project,
+              however in the long run they help create an app that is able to be
+              maintained for a long time
+            </p>
+          </section>
+        </section>
+        <section id="TheRightDev">
+          <h3>Select The Right Dev</h3>
+          <p>
+            Working with a developer can be a great experience, but make sure
+            you find someone who is right for you and your project.
+          </p>
+          <p>
+            There are many different technologies and many styles of developers,
+            do your research before working with someone
+          </p>
+        </section>
+        <section id="Questions"><h2>Questions?</h2></section>
+        <section id="contact">
+          <h3>Stay In Touch</h3>
+          <p><a href="mailto:wesley@seraphdev.com">Wesley@SeraphDev.com</a></p>
+          <img
+            src="reveal/custom/img/Linkedin.png"
+            alt="Linkedin qr code"
+            class="qr"
+          />
+        </section>
+      </div>
+    </div>
+
+    <script src="reveal/dist/reveal.js"></script>
+    <script src="reveal/plugin/notes/notes.js"></script>
+    <script src="reveal/plugin/markdown/markdown.js"></script>
+    <script src="reveal/plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
